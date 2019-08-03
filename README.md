@@ -4,8 +4,8 @@
 
 ## Usage
 
-```
-docker run -d \
+```bash
+$ docker run -d \
   -p 4040:4040 \
   -p 4050:4050 \
   --name=<container name> \
@@ -20,7 +20,7 @@ docker run -d \
 ```
 
 **Web UI:** `http://<host>:4040`
-**Web UI (SSL)**: `https://<host>:4040`
+**Web UI (SSL)**: `https://<host>:4050`
 
 ## Bug Reports
 
