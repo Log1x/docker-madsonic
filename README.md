@@ -16,7 +16,7 @@ $ docker run -d \
   -v <path for podcast files>:/podcasts \
   -v <path for playlist files>:/playlists \
   -v <path for data files>:/data \
-	log1x/madsonic
+  log1x/madsonic
 ```
 
 **Web UI:** `http://<host>:4040`
