@@ -1,5 +1,9 @@
 # Madsonic 7.0 Beta Alpine Docker Image
 
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/log1x/madsonic?style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/log1x/madsonic?style=flat-square)
+![Docker Stars](https://img.shields.io/docker/stars/log1x/madsonic?style=flat-square)
+
 [Madsonic](http://beta.madsonic.org/pages/index.jsp) is a web-based media streamer and jukebox Server. Based on Java technology, Madsonic runs on most platforms, including Windows, Mac, Linux, OSX, and Unix variants.
 
 ## Usage
