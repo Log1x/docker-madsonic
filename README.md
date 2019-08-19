@@ -23,8 +23,18 @@ $ docker run -d \
   log1x/madsonic
 ```
 
-- **Web UI:** `http://<host>:4040`
-- **Web UI (SSL)**: `https://<host>:4050`
+### unRAID
+
+Add the following template repository to unRAID:
+
+```sh
+https://github.com/log1x/docker-templates
+```
+
+### Web UI
+
+- **HTTP:** `http://<host>:4040`
+- **HTTPS:**: `https://<host>:4050`
 
 ## Bug Reports
 
