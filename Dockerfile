@@ -14,15 +14,15 @@ WORKDIR /madsonic
 
 RUN \
   echo "* Updating Package Repositories" \
-    && echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories \
-    && echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories \
-    && echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
+    && echo 'http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories \
+    && echo 'http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories \
+    && echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
     && apk upgrade --no-cache \
   echo "* Installing Runtime Packages" \
     && apk add -U --no-cache \
       ffmpeg \
-      openjdk8-jre@edge \
-      su-exec@edge \
+      openjdk8-jre \
+      su-exec \
   && echo "* Installing Madsonic" \
     && wget -qO- http://madsonic.org/download/${PKG_VER}/${PKG_FILENAME} | tar zxf - \
   && echo "* Creating Madsonic User" \
